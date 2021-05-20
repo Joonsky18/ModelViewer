@@ -200,14 +200,14 @@
 	console.log("data length: " + data3d.length);
 	console.log(status);
 			if(status=="next"){
-				if(ordering==data3d.length){
+				if(ordering==(data3d.length-1)){
 					orderNo = 0
 				}else{
 					orderNo = ordering+1;
 				}
 			}else{
 				if(ordering==0){
-					orderNo = data3d.length
+					orderNo = data3d.length-1
 				}else{
 					orderNo = ordering - 1;
 				}
